@@ -1,0 +1,41 @@
+.background{
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    gap: 30%;
+    z-index: -1;
+    div{
+        position: absolute;
+        width: 800px;
+        height: 800px;
+
+    }
+    :last-child{
+        display: block;
+        position: absolute;
+        height: 1000px;
+        right: -18%;
+        top: 10%;
+        background-color: $Light-Magenta;
+        border-top-right-radius: 49%;
+        border-top-left-radius: 49%;
+        opacity: 0.05;
+        @media (max-width: 768px){
+            right: -135%;
+            top: 38%;
+        }
+    }
+    :first-child{
+        background-image: linear-gradient(200deg, $Light-Magenta 0%,$Light-Violet 40%, $Light-Violet 100%);
+        position: absolute;
+        left: -19%;
+        border-bottom-right-radius: 49%;
+        border-bottom-left-radius: 49%;
+        opacity: 1;
+        @media (max-width: 768px){
+            left: -145%;
+            top: -26%;
+        }
+    }
+}
